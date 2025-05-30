@@ -7,7 +7,7 @@
 
 ## Purpose of this project
 
-- 
+- https://codelabs.developers.google.com/devsite/codelabs/building-ai-agents-vertexai?hl=en#1 
 
 ## Requirements
 

@@ -1,2 +1,0 @@
-1. Push image with `gcloud builds submit --tag gcr.io/empyrean-caster-461110-u0/travel-buddy`
-2. Deploy app with `gcloud run deploy travel-buddy   --image gcr.io/empyrean-caster-461110-u0/travel-buddy   --platform managed   --region northamerica-northeast1   --allow-unauthenticated`

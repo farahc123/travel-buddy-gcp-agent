@@ -7,11 +7,12 @@
 
 ## Goal of this project
 
-- https://codelabs.developers.google.com/devsite/codelabs/building-ai-agents-vertexai?hl=en#1 
-- To create an AI agent using Vertex AI and GCP that helps users plan travel
+- To create an AI agent using GCP resources and Vertex AI that helps users plan travel
+- [Project original source here](https://codelabs.developers.google.com/devsite/codelabs/building-ai-agents-vertexai?hl=en#1)
 
 ## Requirements
 
+- a GCP account
 - an `app.py` file containing the code for a basic Flask app
 - an `index.html` file containing the code for the app's landing page
 - a `Dockerfile` with instructions on how to build the image
@@ -32,8 +33,8 @@
 8. Use the CSS code snippet from the step above to generate code for a simple Flask web app and save this code in a file called *app.py*
 9.  Create a *requirements.txt* file with the web app's dependencies
 10. Create a Dockerfile
-11. Use a `gcloud` command to build and push a Docker image for this containerised app to a GCR repository
-12.  Deploy the app to Cloud Run with a `gcloud run deploy` command
+11. Use a `gcloud` command to build and push a Docker image for this containerised app to a GCR repository, e.g. `gcloud builds submit --tag gcr.io/empyrean-caster-461110-u0/travel-buddy`
+12.  Deploy the app to Cloud Run with a `gcloud run deploy` command, e.g. `gcloud run deploy travel-buddy --image gcr.io/empyrean-caster-461110-u0/travel-buddy --platform managed --region northamerica-northeast1 --allow-unauthenticated`
 
-- Working app: ![working index.html](image.png)
-- Testing the agent's ability to handle Wakanda-related travel questions ![Wakanda question](image-1.png)
+- Working app: ![working index.html](images/image.png)
+- Testing the agent's ability to handle Wakanda-related travel questions ![Wakanda question](images/image-1.png)

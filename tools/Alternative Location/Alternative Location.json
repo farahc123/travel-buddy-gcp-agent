@@ -1,0 +1,41 @@
+{
+  "name": "0a9653ea-3bc1-4535-bc56-5d8452a22be8",
+  "displayName": "Alternative Location",
+  "description": "Use this tool if user's request contains a location that doesn't exist",
+  "dataStoreSpec": {
+    "dataStoreConnections": [ {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/116486034891/locations/global/collections/default_collection/dataStores/wakanda-alternative_1753091939380",
+      "documentProcessingMode": "DOCUMENTS",
+      "engineType": "CHAT_ENGINE",
+      "connectorConfig": {
+      
+      },
+      "createTime": {
+        "seconds": 1753091955,
+        "nanos": 6659000
+      },
+      "displayName": "Wakanda Alternative",
+      "dialogflowAddTime": {
+        "seconds": 1753476466,
+        "nanos": 419000000
+      }
+    } ],
+    "models": {
+      "summarizationModel": {
+        "model": "default"
+      },
+      "rewriterModel": {
+        "model": "default"
+      }
+    },
+    "groundingSettings": {
+    
+    },
+    "payloadSettings": {
+    
+    },
+    "mode": "MODE_DEFAULT"
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

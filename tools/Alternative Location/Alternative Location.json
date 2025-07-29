@@ -23,19 +23,19 @@
     } ],
     "models": {
       "summarizationModel": {
-        "model": "default"
+        "model": "gemini_20_flash_001"
       },
       "rewriterModel": {
-        "model": "default"
+        "model": "gemini_20_flash_001"
       }
     },
     "groundingSettings": {
-    
+      "groundingConfidence": "VERY_LOW"
     },
     "payloadSettings": {
     
     },
-    "mode": "MODE_DEFAULT"
+    "mode": "MODE_CUSTOM"
   },
   "toolType": "CUSTOMIZED_TOOL"
 }

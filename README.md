@@ -4,6 +4,7 @@
   - [Goal of this project](#goal-of-this-project)
   - [Requirements](#requirements)
   - [Steps](#steps)
+  - [CICD (TBC)](#cicd-tbc)
 
 ## Goal of this project
 
@@ -43,3 +44,11 @@
 
 - Working app: ![working index.html](images/image.png)
 - Testing the agent's ability to handle Wakanda-related travel questions ![Wakanda question](images/image-1.png)
+
+## CICD (TBC)
+
+- Ensure the GitHub-Jenkins webhook has the right IP address
+- In the local testing branch of the private repo gcp-update-ai-agent-cicd, make a change (e.g. changing the playbook's description)
+- push the changes
+- this will trigger the Jenkins pipeline, which will merge the changes from the testing branch to main and then deploy the agent
+- check the GCP console to see that the changes are now live

@@ -39,8 +39,8 @@
 11. Use the CSS code snippet from the step above to generate code for a simple Flask web app and save this code in a file called *app.py*
 12. Create a *requirements.txt* file with the web app's dependencies
 13. Create a Dockerfile
-14. Use a `gcloud` command to build and push a Docker image for this containerised app to **existing GCR repository**, e.g. `gcloud builds submit --tag gcr.io/vertex-ai-projects-466609/travel-buddy` ![Docker image deployed](images/image-5.png)
-15.  Deploy the app to Cloud Run with a `gcloud run deploy` command, e.g. `gcloud run deploy travel-buddy --image gcr.io/vertex-ai-projects-466609/travel-buddy --platform managed --region northamerica-northeast1 --allow-unauthenticated` ![Cloud Run service deployed](images/image-4.png)
+14. Use a `gcloud` command to build and push a Docker image for this containerised app to **existing GCR repository**, e.g. `gcloud builds submit --tag gcr.io/<project name>/<existing GCR repo>` ![Docker image deployed](images/image-5.png)
+15.  Deploy the app to Cloud Run with a `gcloud run deploy` command, e.g. `gcloud run deploy travel-buddy --image gcr.io/vertex-ai-projects-466609/travel-buddy --platform managed --region northamerica-northeast1 --allow-unauthenticated` (**the latter flag is for testing only**) ![Cloud Run service deployed](images/image-4.png)
 
 - Working app: ![working index.html](images/image.png)
 - Testing the agent's ability to handle Wakanda-related travel questions ![Wakanda question](images/image-1.png)
@@ -48,7 +48,7 @@
 ## CICD (TBC)
 
 - Ensure the GitHub-Jenkins webhook has the right IP address
-- In the local testing branch of the private repo gcp-update-ai-agent-cicd, make a change (e.g. changing the playbook's description)
-- push the changes
-- this will trigger the Jenkins pipeline, which will merge the changes from the testing branch to main and then deploy the agent
-- check the GCP console to see that the changes are now live
+- In the local testing branch of the gcp-update-ai-agent-cicd repo, make a change (e.g. changing the playbook's description)
+- Push the changes to the remote testing branch
+- This will trigger the Jenkins pipeline, which will merge the changes from the testing branch to main and then deploy the agent
+- Verify that the changes are now live via the GCP console
